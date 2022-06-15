@@ -1,0 +1,279 @@
+*{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Tapestry', cursive;
+}
+
+
+
+.header{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: animate 5s ease-in-out infinite;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1% 6%; */
+    
+}
+
+@keyframes animate{
+    0%, 100%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/school.jpg);
+    }
+    20%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/slide1.jpg);
+    }
+    40%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/slide3.jpg);
+    }
+    60%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/enjoy.jpg);
+    }
+    80%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/graduation.jpg);
+    }
+    100%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/slide2.jpg);
+    }
+
+}
+
+ img{
+    width: 100px;
+    margin-bottom: 350px;
+    border-radius: 15px;
+}
+.nav-lik {
+    flex: 1;
+    text-align: left;
+    top: -100px;
+    margin-left: 100px;
+    
+}
+.nav-lik ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+    
+}
+.nav-lik ul li a{
+    color: whitesmoke;
+    font-size: 13px;
+}
+
+.nav-lik ul li ::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    margin: auto;
+    display: block;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+
+.nav-lik ul li :hover ::after{
+    width: 100%;
+    
+}
+.heading{
+    color: darkgoldenrod;
+}
+ .text{
+     color: blueviolet;
+ }  
+
+.more{
+    text-align: center;
+    height: 35px;
+    font-size: 20px;
+   background-color: azure;
+    width: fit-content;
+    display: flex;
+    margin-left: 450px;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+.more :hover{
+    background-color: aqua;
+    width: 100%;
+}
+
+@media only screen and (max-width:700px){
+    .heading {
+        color: blue;
+    }
+    .text1{
+        
+        color: seashell;
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+        #conainer{
+            width: 900px;
+        }
+        .seco{
+            width: 30%; margin: 0px; border-radius: 5px; padding: 0px;
+        }
+        h1{
+            font-size: 47px;
+            font-weight: bold;
+            color: blue;
+        }
+    }
+
+
+/*----- coure ------*/
+
+.course{
+    text-align: center;
+    margin-bottom: 70px;
+}
+#conainer{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    background-color: #f44336;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+h1{
+    font-size: 47px;
+    font-weight: bold;
+}
+
+.seco{
+width: 30%;
+margin: 4px 5px 4px 5px;
+background-color: bisque;
+border-radius: 20px;
+padding: 0px 17px;
+}
+.seco:hover{
+    background-color: aquamarine;
+}
+
+
+
+/*----- campus ------*/
+
+
+#campus{
+    text-align: center;
+}
+
+.camp{
+    width: 350px;
+    height: 500px;
+   margin: 0px;
+   padding: 5px 10px 0px 20px;
+   border-radius: 10px;
+}
+.amp{
+    width: 350px;
+    height: 500px;
+    margin: 0px 10px 2px 0px;
+    padding: 5px 10px 0px 0px;
+    border-radius: 10px;
+    
+}
+
+.okokay{
+    width: 350px;
+    height: 500px;
+    margin: 0px 20px opx 0px;
+    padding: 5px 5px 0px -35px;
+    border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    border-radius: 15px;
+    width: 1100px;
+    height: 600px;
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+
+h3{
+    text-align: center;
+    color: #f44336;
+    
+}
+
+
+
+/*----- facilities ------*/
+
+
+.face{
+    text-align: center; 
+}
+
+.facili{
+    width: 350px;
+    height: 350px;
+    margin-bottom: -20px;
+}
+
+
+.whole{
+    display: flex;
+    width: 1100px;
+    margin-left: 50px;
+}
+
+.field{
+    width: 350px;
+    height: 350px;
+    margin-bottom: -20px;
+}
+
+.break{
+    width: 350px;
+    height: 350px;
+    margin-bottom: -20px;
+}
+
+.ahoo{
+    text-align: center;
+}
+
+.head4{
+    margin-top: 25px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
