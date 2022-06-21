@@ -3,7 +3,11 @@
 font-family: 'Tapestry', cursive;
 }
 
-
+#container{
+    height: 30em;
+    text-align: center;
+    margin-right: 110px; margin-top: 20px;
+}
 
 .header{
     height: 700px;
@@ -17,9 +21,7 @@ font-family: 'Tapestry', cursive;
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* padding: 1% 6%; */
-    
+    justify-content: space-between; 
 }
 
 @keyframes animate{
@@ -44,28 +46,31 @@ nav{
 
 }
 
- img{
+ .alik{
     width: 100px;
-    margin-bottom: 350px;
+    margin-bottom: 250px;
     border-radius: 15px;
+    margin-left: 20px;
 }
 .nav-lik {
     flex: 1;
     text-align: left;
-    top: -100px;
-    margin-left: 100px;
-    
+    width: 470px;
+    margin-left: 10px;
+    margin-top: 23em;
+    background-color: rgb(61, 81,102); 
 }
 .nav-lik ul li{
     list-style: none;
     display: inline-block;
     position: relative;
-    padding: 8px 12px;
+    padding: 5px 3px;
     
 }
 .nav-lik ul li a{
     color: whitesmoke;
-    font-size: 13px;
+    font-size: 16px;
+    
 }
 
 .nav-lik ul li ::after{
@@ -87,7 +92,8 @@ nav{
     color: darkgoldenrod;
 }
  .text{
-     color: blueviolet;
+     color: gray;
+     font-size: 1.3em;
  }  
 
 .more{
@@ -216,7 +222,7 @@ padding: 0px 17px;
 
 h3{
     text-align: center;
-    color: #f44336;
+    color: darkmagenta;
     
 }
 
@@ -260,7 +266,9 @@ h3{
 
 .head4{
     margin-top: 25px;
+    color: cornflowerblue;
 } 
+
 
 
 
