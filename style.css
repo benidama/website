@@ -3,11 +3,7 @@
 font-family: 'Tapestry', cursive;
 }
 
-#container{
-    height: 30em;
-    text-align: center;
-    margin-right: 110px; margin-top: 20px;
-}
+
 
 .header{
     height: 700px;
@@ -16,6 +12,7 @@ font-family: 'Tapestry', cursive;
     background-position: center;
     background-size: cover;
     position: relative;
+    align-items: center;
     animation: animate 5s ease-in-out infinite;
 }
 nav{
@@ -23,7 +20,10 @@ nav{
     align-items: center;
     justify-content: space-between; 
 }
-
+ .new{
+    height: 50px; width: 40px;
+    display: none;
+}
 @keyframes animate{
     0%, 100%{
         background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/school.jpg);
@@ -47,64 +47,63 @@ nav{
 }
 
  .alik{
-    width: 100px;
-    margin-bottom: 250px;
+    width: 80px;
+    margin-bottom: 540px;
     border-radius: 15px;
-    margin-left: 20px;
+    margin-left: -2010px;
+    
 }
-.nav-lik {
-    flex: 1;
-    text-align: left;
-    width: 470px;
-    margin-left: 10px;
-    margin-top: 23em;
-    background-color: rgb(61, 81,102); 
+.na-lik {
+    
+    width: 1333px;
+    /* background-color: rgb(61, 81,102); */
+    margin-bottom: 645px;
+    justify-content: end;
+    margin-right: 700px;
+    display: flex;
+    
+
+
 }
-.nav-lik ul li{
+.na-lik ul li{
     list-style: none;
     display: inline-block;
     position: relative;
-    padding: 5px 3px;
-    
+    text-align: center;  
 }
-.nav-lik ul li a{
+.na-lik ul li a{
     color: whitesmoke;
     font-size: 16px;
     
 }
-
-.nav-lik ul li ::after{
-    content: "";
-    width: 0%;
-    height: 1px;
-    margin: auto;
-    display: block;
-    background: #f44336;
-    transition: 0.5s;
+.txt{
+    color: aliceblue;
 }
-
-
-.nav-lik ul li :hover ::after{
-    width: 100%;
-    
-}
-.heading{
-    color: darkgoldenrod;
-}
- .text{
-     color: gray;
-     font-size: 1.3em;
- }  
-
-.more{
+.ayo{
+    color: tomato;
     text-align: center;
-    height: 35px;
-    font-size: 20px;
-   background-color: azure;
-    width: fit-content;
-    display: flex;
-    margin-left: 450px;
 }
+#head{
+    color: darkgoldenrod;
+    font-weight: bold;
+    text-align: center;
+}
+  #here{
+    margin-bottom: 100px;
+    /* background-color: blue; */
+    width: 100%;
+    margin: 50px;
+    text-align: center;
+    border-radius: 20px;
+  }
+.above{
+    /* background-color: aqua; */
+    margin-bottom: 120px;
+}
+  #second{
+    text-align: center;
+    
+  }
 a{
     text-decoration: none;
     
@@ -112,35 +111,72 @@ a{
 a:hover{
     text-decoration: underline;
     transition: 1s;
-}
-.more :hover{
-    background-color: aqua;
-    width: 100%;
+    color: blue;
 }
 
+
 @media only screen and (max-width:700px){
-    .heading {
-        color: blue;
+    #head{
+    color: darkgoldenrod;
+    font-size: 33px;
+    text-align: center;
     }
-    .text1{
-        
-        color: seashell;
+.na-lik ul li{
+    display: block;
+}
+.na-lik {
+    position: absolute;
+    background-color: darkgoldenrod;
+    height: 100vh;
+    width: 170px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+}
+    .ayo{
+        color: tomato;
         text-align: center;
-        font-size: 14px;
-        width: 100%;
+        font-size: 18px;
     }
     
-        #conainer{
-            width: 900px;
+        #here{
+            /* width: 900px; */
+            margin-bottom: 30px;
+    /* background-color: blue; */
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
         }
-        .seco{
-            width: 30%; margin: 0px; border-radius: 5px; padding: 0px;
+        .above{
+            /* background-color: aqua; */
+            margin-bottom: 50px;
         }
+       
         h1{
-            font-size: 47px;
+            font-size: 12px;
             font-weight: bold;
             color: blue;
+            text-align: center;
         }
+        .header{
+            width: 100%;
+            /* background-color: blue; */
+        }
+         .alik{
+            width: 50px;
+            height: 60px;
+            /* margin-bottom: 570px; */
+            border-radius: 10px;
+            /* margin-left: -2400px; */
+        }
+       .new{
+            height: 50px; width: 40px;
+            display: inline;
+
+        }
+       
     }
 
 
@@ -175,6 +211,38 @@ padding: 0px 17px;
     background-color: aquamarine;
 }
 
+@media only screen and (max-width:700px){
+   
+    .seco{
+        width: 95%;
+        margin: 5px 5px 4px 5px;
+        background-color: bisque;
+        border-radius: 10px;
+        /* padding: 5px 7px 5px 7px; */
+        }
+       
+        h1{
+            font-size: 12px;
+            font-weight: bold;
+            color: blue;
+            text-align: center;
+        }
+        
+        .course{
+            text-align: center;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        #conainer{
+            /* justify-content: space-between; */
+            background-color: #f44336;
+            margin-top: 15px;
+            margin: 7px;
+            display: block;
+            width: 360px;
+            height: 100%;
+        }
+    }
 
 
 /*----- campus ------*/
@@ -187,8 +255,8 @@ padding: 0px 17px;
 .camp{
     width: 350px;
     height: 500px;
-   margin: 0px;
-   padding: 5px 10px 0px 20px;
+   margin: 0px 5px 0px 0px;
+   padding: 5px 10px 0px 25px;
    border-radius: 10px;
 }
 .amp{
@@ -226,6 +294,52 @@ h3{
     
 }
 
+
+@media only screen and (max-width:700px){
+    
+       
+        h1{
+            font-size: 33px;
+            font-weight: bold;
+            color: blue;
+            text-align: center;
+        }
+       
+        .row{
+            display: block;
+            border-radius: 15px;
+             width: 100%;
+            height: 100%;
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+            margin: 7px;
+        }
+        .camp{
+            width: 95%;
+            height: 400px;
+           margin: 0px 10px 0px 0px;
+           padding: 5px 5px 0px 0px;
+           border-radius: 10px;
+        }
+        .amp{
+            width: 95%;
+            height: 400px;
+            margin: 0px 10px 2px 0px;
+            padding: 5px 10px 0px 0px;
+            border-radius: 10px;
+            
+        }
+        
+        .okokay{
+            width: 95%;
+            height: 400px;
+            margin: 5px 10px 2px 0px;
+            padding: 5px 5px 0px -30px;
+            border-radius: 10px;
+        }
+        
+    }
 
 
 /*----- facilities ------*/
@@ -270,12 +384,49 @@ h3{
 } 
 
 
+@media only screen and (max-width:700px){
+  
+        h1{
+            font-size: 33px;
+            font-weight: bold;
+            color: blue;
+            text-align: center;
+        }
+      
+       
+        .whole{
+             display: block; 
+            width: 100%; 
+            margin-left: 10px;
+        }
+    }
 
 
+/*----- footer ------*/
 
+#kumu{
+    display: flex;
+}
 
+@media only screen and (max-width:700px){
+  
+    h1{
+        font-size: 33px;
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+    }
+  
+   
+   #futa{
+    text-align: center;
+    height: 100%;
+   }
+   #kumu{
+    display: block;
 
-
+   }
+}
 
 
 
